@@ -27,7 +27,7 @@ export default function Home() {
             <div className={styles.description}>
               <h2 className={styles.h2}>Qui est Ben ? </h2>
               <p className={styles.descriptionText}>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
                 unde sequi hic corrupti obcaecati voluptates adipisci cupiditate
                 placeat reiciendis, eos a ducimus veniam numquam quaerat
                 laudantium doloremque accusamus quia harum. Accusamus earum
@@ -35,7 +35,7 @@ export default function Home() {
                 laboriosam debitis deleniti nisi. Velit, incidunt debitis vitae
                 illum quis consequuntur, eius alias corrupti beatae omnis, eum
                 nulla similique. Dolorum, commodi ad voluptatibus excepturi
-                laudantium"
+                laudantium
               </p>
             </div>
           </div>
