@@ -6,6 +6,7 @@ import { Footer } from "../components/Footer";
 import { Presentation } from "../components/Presentation";
 import styles from "../styles/Home.module.scss";
 import realisationJson from "../realisations.json";
+import { FaAngleUp } from "react-icons";
 
 export const Home = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -60,6 +61,18 @@ export const Home = () => {
         <section id="mespartenaires">Mes partenaires</section>
         <section>Contact</section>
       </main>
+      <div className={styles.scrollUp}>
+        <a href="#accueil">
+          {" "}
+          <Image
+            src="/angle-up-svgrepo-com.svg"
+            width={40}
+            height={40}
+            alt="FaAngleUp"
+            className={styles.svg}
+          />
+        </a>
+      </div>
       <Footer />
     </div>
   );

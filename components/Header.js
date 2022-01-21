@@ -15,7 +15,7 @@ export const Header = () => {
     }
   };
   return (
-    <div className={styles.header}>
+    <div className={styles.header} id="accueil">
       <div className={styles.headerBody}>
         <div className={styles.headerLogo}>
           <Image
@@ -28,23 +28,50 @@ export const Header = () => {
         </div>
         {menuIsOpen && (
           <nav className={styles.nav_mobile}>
+            <div className={styles.headerLogo}>
+              <Image
+                src="/logo.svg"
+                alt="image 2"
+                className={styles.logo}
+                width={240}
+                height={80}
+              />
+            </div>
             <div className={styles.burger_close} onClick={handleBurgerMenu}>
               <Image
                 src="/32px-Black_close_x.svg"
-                width="40"
-                height="40"
+                width="30"
+                height="30"
                 alt="close_button"
               />
             </div>
             <ul className={styles.ul_mobile}>
               <li>
-                <a href="#ben">Ben</a>
+                <a
+                  href="#ben"
+                  className={styles.link}
+                  onClick={handleBurgerMenu}
+                >
+                  Ben
+                </a>
               </li>
               <li>
-                <a href="#mesrealisations">Mes réalisations</a>
+                <a
+                  href="#mesrealisations"
+                  className={styles.link}
+                  onClick={handleBurgerMenu}
+                >
+                  Mes réalisations
+                </a>
               </li>
               <li>
-                <a href="#mespartenaires">Mes partenaires</a>
+                <a
+                  href="#mespartenaires"
+                  className={styles.link}
+                  onClick={handleBurgerMenu}
+                >
+                  Mes partenaires
+                </a>
               </li>
             </ul>
           </nav>
@@ -54,26 +81,20 @@ export const Header = () => {
           <a href="#mesrealisations">Mes réalisations</a>
           <a href="#mespartenaires">Mes partenaires</a>
         </nav>
-        {
-          !menuIsOpen && (
-            <div className={styles.burger_open} onClick={handleBurgerMenu}>
-              <svg viewBox="0 0 100 80" width="40" height="40">
-                <rect width="100" height="10"></rect>
-                <rect y="30" width="100" height="10"></rect>
-                <rect y="60" width="100" height="10"></rect>
-              </svg>
-            </div>
-          ) /* : (
-          <div className={styles.burger_close} onClick={handleBurgerMenu}>
-            <Image
-              src="/32px-Black_close_x.svg"
+        {!menuIsOpen && (
+          <div className={styles.burger_open} onClick={handleBurgerMenu}>
+            <svg
+              viewBox="0 0 100 80"
               width="40"
               height="40"
-              alt="close_button"
-            />
+              className={styles.burger_svg}
+            >
+              <rect width="100" height="10"></rect>
+              <rect y="30" width="100" height="10"></rect>
+              <rect y="60" width="100" height="10"></rect>
+            </svg>
           </div>
-        ) */
-        }
+        )}
       </div>
     </div>
   );
