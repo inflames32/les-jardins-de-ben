@@ -1,8 +1,4 @@
 @media screen and (max-width: 600px) {
-  .profile {
-    width: 100%;
-    height: 499px;
-  }
   .article {
     width: 90%;
   }
@@ -105,49 +101,12 @@
   }
 
   .main {
-    padding-top: 90px;
     min-height: 100vh;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .presentation {
-    border: solid 2px green;
-    width: 80%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-  }
-
-  .profile {
-    width: 100%;
-    height: 495px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .h2 {
-    font-size: 1em;
-    border-radius: 50px;
-  }
-  .description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: 1.2em;
-
-    width: 50%;
-  }
-  .descriptionText {
-    font-size: 5;
-    padding: 0px 5px 5px 5px;
-    max-height: 80%;
-    font-size: 0.8em;
   }
 
   .title {

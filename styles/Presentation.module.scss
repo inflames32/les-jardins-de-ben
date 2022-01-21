@@ -1,6 +1,6 @@
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 701px) {
     .presentation {
-        padding-top: 6rem;
+        padding-top: 120px;
         height: auto;
         width: 100%;
         display: flex;
@@ -25,10 +25,36 @@
         }
     }
 }
+@media screen and (max-width: 700px) {
+    .presentation {
+        padding-top: 6rem;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        .profile {
+            .images {
+                width: 100%;
+            }
+        }
+
+        .description {
+            padding: 50px;
+            width: 100%;
+        }
+        .descriptionText {
+            width: 100%;
+            margin: auto;
+        }
+    }
+}
 
 @media screen and (min-width: 701px) {
     .presentation {
-        width: 600px;
+        /* width: 600px; */
         display: flex;
         flex-direction: row;
         .profile {
@@ -42,56 +68,3 @@
         padding: 50px;
     }
 }
-/* 
-.presentation {
-    border: solid 2px green;
-    width: 80%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-}
-
-.profile {
-    width: 100%;
-    height: 495px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.h2 {
-    font-size: 1em;
-    border-radius: 50px;
-}
-.description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: 1.2em;
-
-    width: 50%;
-}
-.descriptionText {
-    font-size: 5;
-    padding: 0px 5px 5px 5px;
-    max-height: 80%;
-    font-size: 0.8em;
-}
-
-.title,
-.description {
-    text-align: center;
-}
-
-.description {
-    margin: 4rem 0;
-    line-height: 1.5;
-    font-size: 1.5rem;
-}
-
-.h2 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-weight: bold;
-}
- */
