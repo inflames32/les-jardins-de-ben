@@ -6,24 +6,6 @@
   .article {
     width: 90%;
   }
-  .presentation {
-    border: solid 2px green;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-  }
-  .description {
-    margin-top: 5px;
-    width: 100%;
-  }
-  .descriptionText {
-    width: 100%;
-    margin: auto;
-  }
 
   .grid {
     width: 100%;
@@ -54,6 +36,35 @@
     bottom: 30px;
     right: 30px;
   }
+  .scrollUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 3;
+    color: white;
+  }
+  .scrollUp:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+  }
+  .svg {
+    background-color: green;
+  }
+  .svg:hover {
+    background-color: rgb(175, 16, 16);
+    transition: 0.5s;
+  }
 }
 
 @media (min-width: 601px) {
@@ -68,19 +79,6 @@
   .img {
     max-width: 30%;
     box-sizing: border-box;
-  }
-
-  .presentation {
-    width: 600px;
-
-    display: flex;
-    flex-direction: row;
-  }
-  .profile {
-    max-width: 100%;
-  }
-  .description {
-    height: 80%;
   }
 
   .grid {

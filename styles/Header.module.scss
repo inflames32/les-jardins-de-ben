@@ -136,16 +136,18 @@
     display: none;
   }
   .burger_open {
+    height: 80px;
     position: fixed;
-    top: 20px;
+    top: 0px;
     right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .burger_close {
+    height: 80px;
     position: fixed;
-    top: 20px;
+    top: 0px;
     right: 20px;
     display: flex;
     align-items: center;
