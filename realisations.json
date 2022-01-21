@@ -1,0 +1,42 @@
+[
+  {
+    "image": "/apres_abbatage_arbres.jpg",
+    "description": "Après abbatage d'arbres"
+  },
+  {
+    "image": "/avant_abbatage_arbres.jpg",
+    "description": "Avant abbatages d'arbres"
+  },
+  {
+    "image": "/avant_nettoyage_mur.jpg",
+    "description": "Avant nettoyage du mur"
+  },
+  {
+    "image": "/apres_nettoyage_mur.jpg",
+    "description": "Après nettoyage d'un mur"
+  },
+  {
+    "image": "/avant_taille_frutiere.jpg",
+    "description": "Avant taille frutière"
+  },
+  {
+    "image": "/apres_taille_frutiere.jpg",
+    "description": "Après taille frutière"
+  },
+  {
+    "image": "/avant_taille_figuier.jpg",
+    "description": "Avant taille de figuiers"
+  },
+  {
+    "image": "/apres_taille_figuier.jpg",
+    "description": "Après la taille de figuiers"
+  },
+  {
+    "image": "/creation_rocaille.jpg",
+    "description": "Création de rocailles"
+  },
+  {
+    "image": "/creation_massif_devant_maison.jpg",
+    "description": "Création d'un massif devant une maison"
+  }
+]

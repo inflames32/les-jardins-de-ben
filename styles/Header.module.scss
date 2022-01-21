@@ -1,0 +1,214 @@
+@media screen and (max-width: 1099px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    z-index: 200;
+    .nav_mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: green;
+      width: 100%;
+      height: 100vh;
+      z-index: 200;
+      .ul_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+      }
+    }
+    .headerBody {
+      z-index: 1000;
+      margin-top: 82px;
+      display: flex;
+      width: 100%;
+      height: 80px;
+      justify-content: space-around;
+      nav {
+        width: 100%;
+      }
+      ul {
+        padding-left: 0;
+        height: 600px;
+        li {
+          display: flex;
+          text-align: center;
+          font-size: 1.2rem;
+          width: 100%;
+          height: 50px;
+          margin: auto;
+          a {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin: auto;
+          }
+          a:hover {
+            display: flex;
+            text-align: center;
+            background-color: rgb(181, 192, 181);
+            transition: 0.6s;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            height: 80px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .headerLogo {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+  }
+
+  .nav_mobile {
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    overflow: hidden;
+    .ul_mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+    }
+  }
+  .nav_notmobile {
+    display: none;
+  }
+  .burger_open {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .burger_close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* @media screen and (min-width: 901px) {
+  .header {
+    width: 100%;
+    height: 80px;
+
+    z-index: 200;
+    .headerBody {
+      display: flex;
+      width: 100%;
+      height: 80px;
+      justify-content: space-between;
+    }
+    .headerLogo {
+      position: fixed;
+      left: 20px;
+      top: 20px;
+    }
+    .burger_open {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .burger_close {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      border: solid black 5px;
+      background-color: white;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav_notmobile {
+      display: none;
+    }
+    .nav_mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100vh;
+      z-index: 200;
+      .ul_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+      }
+    }
+  }
+} */
+@media screen and (min-width: 1100px) {
+  .nav_mobile {
+    display: none;
+  }
+  .nav_notmobile {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 80px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    a:hover {
+      background-color: rgb(181, 192, 181);
+      transition: 0.6s;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      height: 80px;
+    }
+  }
+  .header {
+    width: 100%;
+    height: 80px;
+    .headerBody {
+      display: flex;
+      height: 80px;
+    }
+    .headerLogo {
+      display: flex;
+      align-items: center;
+      height: 80px;
+    }
+    .burger_open {
+      display: none;
+    }
+    .burger_close {
+      display: none;
+    }
+  }
+}
