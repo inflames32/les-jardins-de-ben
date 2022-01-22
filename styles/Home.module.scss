@@ -38,6 +38,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .main {
+    background-color: #8fa58f;
+  }
   .article {
     width: 90%;
   }
@@ -100,7 +103,6 @@
     background-color: green;
   }
   .svg:hover {
-    background-color: rgb(175, 16, 16);
     transition: 0.5s;
   }
   .h2 {
@@ -142,8 +144,7 @@
   }
 
   .container {
-    background-color: #869c86;
-    padding: 0 2rem;
+    background-color: #8fa58f;
   }
 
   .main {

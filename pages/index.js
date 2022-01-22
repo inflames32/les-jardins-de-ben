@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
@@ -129,15 +130,17 @@ export const Home = () => {
         </section>
       </main>
       <div className={styles.scrollUp}>
-        <a href="#accueil">
-          <Image
-            src="/angle-up-svgrepo-com.svg"
-            width={40}
-            height={40}
-            alt="FaAngleUp"
-            className={styles.scrollUp_svg}
-          />
-        </a>
+        <Link href="/">
+          <a>
+            <Image
+              src="/angle-up-svgrepo-com.svg"
+              width={40}
+              height={40}
+              alt="FaAngleUp"
+              className={styles.scrollUp_svg}
+            />
+          </a>
+        </Link>
       </div>
       <Footer />
     </div>
