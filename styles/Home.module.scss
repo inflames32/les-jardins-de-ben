@@ -1,15 +1,56 @@
+.card:hover {
+  box-shadow: black 2 2 2;
+}
+.carousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2000;
+  background-color: rgb(59, 59, 59);
+  transition: 2s;
+}
+.close_carroussel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.backward {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+}
+.forward {
+  display: flex;
+  padding-right: 50px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100vh;
+}
+
 @media screen and (max-width: 600px) {
   .article {
     width: 90%;
   }
 
   .grid {
+    display: flex;
     width: 100%;
     flex-direction: column;
   }
   .elem {
     width: 90%;
     padding: 5px;
+    list-style: none;
   }
 
   .card {
@@ -22,6 +63,7 @@
       font-size: 1.2rem;
     }
   }
+
   .back_home {
     width: 50px;
     height: 50px;
@@ -61,6 +103,9 @@
     background-color: rgb(175, 16, 16);
     transition: 0.5s;
   }
+  .h2 {
+    text-align: center;
+  }
 }
 
 @media (min-width: 601px) {
@@ -97,6 +142,7 @@
   }
 
   .container {
+    background-color: #869c86;
     padding: 0 2rem;
   }
 
@@ -163,12 +209,41 @@
   }
 
   .ul {
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     padding-left: 0px;
+    .elem {
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .ul {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left: 0px;
+      .elem {
+        width: 50%;
+      }
+    }
+  }
+  @media screen and (min-width: 1100px) {
+    .ul {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left: 0px;
+      .elem {
+        width: 30%;
+      }
+    }
   }
 
   .card > p {
@@ -188,6 +263,11 @@
     transition: color 0.15s ease, border-color 0.15s ease;
     max-width: 400px;
   }
+
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+  }
+
   .images {
     max-width: 100%;
   }
@@ -232,10 +312,10 @@
     bottom: 35px;
     right: 30px;
   }
-  .svg {
+  .scrollUp_svg {
     background-color: green;
   }
-  .svg:hover {
+  .scrollUp_svg:hover {
     background-color: rgb(175, 16, 16);
     transition: 0.5s;
   }
