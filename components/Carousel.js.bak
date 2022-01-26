@@ -1,0 +1,56 @@
+import { useState } from "react";
+import Image from "next/image";
+import realisationJson from "../realisations.json";
+import styles from "../styles/Carousel.module.scss";
+export const Carousel = ({ imageIndex, setImageIndex }) => {
+  return (
+    <div className={styles.carousel_container}>
+      <div className={styles.imageIndex}>{imageIndex}</div>
+      <div className={styles.carousel_button_prev}>
+        <Image
+          src="/27323.svg"
+          alt="image précédente"
+          className={styles.images}
+          width={120}
+          height={80}
+          onClick={() => setImageIndex(imageIndex - 1)}
+        />
+      </div>
+      <div key="key" className={styles.carousel_images}>
+        {realisationJson.map((image, index) => {
+          return (
+            <article key={index}>
+              <h1>
+                {index}/{image.key}
+              </h1>
+              <Image
+                name={image.description}
+                key={image.index}
+                src={image.image}
+                alt="image précédente"
+                className={styles.image_carousel}
+                width={120}
+                height={80}
+              />
+              <div className={styles.image_description}>
+                {image.description}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+      <div className={styles.carousel_button_prev}>
+        <Image
+          src="/27324.svg"
+          alt="image suivante"
+          className={styles.images}
+          width={120}
+          height={80}
+          onClick={() => setImageIndex(imageIndex + 1)}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Carousel;

@@ -5,47 +5,47 @@
     "description": "Après abattage d'arbres"
   },
   {
-    "key": "2",
+    "key": "1",
     "image": "/avant_abattage_arbres.jpg",
     "description": "Avant abattages d'arbres"
   },
   {
-    "key": "3",
+    "key": "2",
     "image": "/avant_nettoyage_mur.jpg",
     "description": "Avant nettoyage du mur"
   },
   {
-    "key": "4",
+    "key": "6",
     "image": "/apres_nettoyage_mur.jpg",
     "description": "Après nettoyage d'un mur"
   },
   {
-    "key": "5",
+    "key": "4",
     "image": "/avant_taille_frutiere.jpg",
     "description": "Avant taille frutière"
   },
   {
-    "key": "6",
-    "image": "/apres_taille_frutiere_nouvelle.jpg",
+    "key": "5",
+    "image": "/apres_taille_frutiere.jpg",
     "description": "Après taille frutière"
   },
   {
-    "key": "7",
+    "key": "6",
     "image": "/avant_taille_figuier.jpg",
     "description": "Avant taille de figuiers"
   },
   {
-    "key": "8",
+    "key": "7",
     "image": "/apres_taille_figuier.jpg",
     "description": "Après la taille de figuiers"
   },
   {
-    "key": "9",
+    "key": "8",
     "image": "/creation_rocaille.jpg",
     "description": "Création de rocailles"
   },
   {
-    "key": "10",
+    "key": "9",
     "image": "/creation_massif_devant_maison.jpg",
     "description": "Création d'un massif devant une maison"
   }

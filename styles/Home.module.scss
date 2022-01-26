@@ -1,40 +1,8 @@
-.card:hover {
-  box-shadow: black 2 2 2;
+.mesrealisations {
+  margin-top: 200px;
 }
-.carousel {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 2000;
-  background-color: rgb(59, 59, 59);
-  transition: 2s;
-}
-.close_carroussel {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-}
-.backward {
-  display: flex;
-  align-items: center;
-  padding-left: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 80px;
-  height: 100vh;
-}
-.forward {
-  display: flex;
-  padding-right: 50px;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 80px;
-  height: 100vh;
+.ben {
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 600px) {
@@ -44,8 +12,15 @@
   .article {
     width: 90%;
   }
+  .ben {
+    margin-top: 50px;
+  }
+  .mesrealisations {
+    margin-top: 100px;
+  }
 
   .grid {
+    height: 100%;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -124,11 +99,6 @@
     box-sizing: border-box;
   }
 
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-
   .elem {
     width: 30%;
   }
@@ -183,6 +153,9 @@
     line-height: 1.5;
     font-size: 1.5rem;
   }
+  .mesrealisations {
+    margin-top: 200px;
+  }
 
   .code {
     background: #fafafa;
@@ -199,7 +172,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
+    max-width: 95%;
+    height: 100%;
   }
   .grid li {
     list-style: none;
@@ -232,6 +206,18 @@
         width: 50%;
       }
     }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 95%;
+      height: 100%;
+    }
+    .grid li {
+      list-style: none;
+    }
   }
   @media screen and (min-width: 1100px) {
     .ul {
@@ -242,8 +228,26 @@
       justify-content: center;
       padding-left: 0px;
       .elem {
+        display: flex;
+        justify-content: center;
         width: 30%;
       }
+    }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 95%;
+      height: 100%;
+    }
+    .grid li {
+      list-style: none;
+    }
+    .mesrealisations {
+      width: 100%;
+      margin-top: 200px;
     }
   }
 
@@ -319,5 +323,13 @@
   .scrollUp_svg:hover {
     background-color: rgb(175, 16, 16);
     transition: 0.5s;
+  }
+  .mesrealisations {
+    margin-top: 200px;
+    width: 100%;
+  }
+  .grid {
+    margin: auto;
+    width: 99%;
   }
 }

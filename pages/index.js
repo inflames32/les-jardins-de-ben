@@ -2,35 +2,18 @@ import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import CarouselComponent from "../components/Carousel.js";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { Carroussel } from "../components/Carroussel";
+
 import { Presentation } from "../components/Presentation";
 import styles from "../styles/Home.module.scss";
-import realisationJson from "../realisations.json";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import { FaAngleUp } from "react-icons";
 
 export const Home = () => {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const [CarrousselIsOpen, setCarrousselIsOpen] = useState(false);
-
-  const handleBurgerMenu = () => {
-    if (menuIsOpen) {
-      console.log("jouvre le menu");
-      setMenuIsOpen(false);
-    } else {
-      console.log("je ferme le menu");
-      setMenuIsOpen(true);
-    }
-  };
-
-  const handleCarroussel = (name) => {
-    console.log("je lance le carroussel");
-    setCarrousselIsOpen(true);
-  };
-  const closeCarroussel = () => {
-    setCarrousselIsOpen(false);
-  };
+  const [index, setIndex] = useState(0);
 
   return (
     <div className={styles.container}>
@@ -47,75 +30,11 @@ export const Home = () => {
         <section id="ben" className={styles.ben}>
           <Presentation className={styles.presentation} />
         </section>
-        <section id="mesrealisations">
+        <section id="mesrealisations" className={styles.mesrealisations}>
           <div className={styles.grid}>
             <h2 className={styles.h2}>Mes réalisations</h2>
-            {CarrousselIsOpen && (
-              <div className={styles.carousel}>
-                <div className={styles.backward}>
-                  <Image
-                    src="/27323.svg"
-                    alt="image précédente"
-                    className={styles.images}
-                    width={120}
-                    height={80}
-                  />
-                </div>
-                <div key="key" className="">
-                  {realisationJson.map((image, index) => {
-                    return (
-                      <Image
-                        name={image.description}
-                        key={image.key}
-                        src={image.image}
-                        alt="image précédente"
-                        className={styles.images}
-                        width={120}
-                        height={80}
-                      />
-                    );
-                  })}
-                </div>
-                <div className={styles.forward}>
-                  <Image
-                    src="/27324.svg"
-                    alt="image suivante"
-                    className={styles.images}
-                    width={120}
-                    height={80}
-                  />
-                </div>
-                <div
-                  className={styles.close_carroussel}
-                  onClick={closeCarroussel}
-                >
-                  <Image
-                    src="/32px-Black_close_x.svg"
-                    width="30"
-                    height="30"
-                    alt="close_button"
-                  />
-                </div>
-              </div>
-            )}
-            <ul className={styles.ul}>
-              {realisationJson.map((elem) => (
-                <li className={styles.elem} key={elem.key}>
-                  <article className={styles.card}>
-                    <Image
-                      onClick={handleCarroussel}
-                      key={elem.key}
-                      src={elem.image}
-                      alt={elem.image}
-                      className={styles.images}
-                      width={1920}
-                      height={1280}
-                    />
-                    <p className={styles.img_description}>{elem.description}</p>
-                  </article>
-                </li>
-              ))}
-            </ul>
+            <CarouselComponent index={index} setIndex={setIndex} />
+            <ul className={styles.ul}></ul>
           </div>
         </section>
         <section id="mespartenaires">
