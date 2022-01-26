@@ -1,15 +1,18 @@
+.guillemet {
+    padding: 3em;
+}
 @media screen and (min-width: 701px) {
     .presentation {
-        padding-top: 120px;
-        height: auto;
-        width: 100%;
+        height: 400px;
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         margin: auto;
         .profile {
-            width: 50%;
+            width: 400px;
+            padding: 1rem;
             .images {
                 width: 100%;
             }
@@ -23,12 +26,30 @@
             width: 100%;
             margin: auto;
         }
+        .guillemet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1em;
+        }
+        .text {
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
 @media screen and (max-width: 700px) {
+    .guillemet {
+        padding: 1em;
+    }
+    .text {
+        display: flex;
+        flex-direction: row;
+    }
     .presentation {
-        padding-top: 6rem;
-        height: auto;
+        padding-top: 3rem;
+        height: 600px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -36,6 +57,7 @@
         text-align: center;
         margin: auto;
         .profile {
+            width: 80%;
             .images {
                 width: 80%;
             }
